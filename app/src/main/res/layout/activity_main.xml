@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.usmaker.notreadmsgdemo.MainActivity">
+
+    <Button
+        android:id="@+id/btn_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发消息"/>
+    <Button
+        android:layout_below="@+id/btn_send_msg"
+        android:id="@+id/btn_accept_msg"
+        android:text="查看消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <cn.usmaker.notreadmsgdemo.BottomBarView
+        android:id="@+id/bottom_bar_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </cn.usmaker.notreadmsgdemo.BottomBarView>
+</RelativeLayout>
